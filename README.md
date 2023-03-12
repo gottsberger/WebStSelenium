@@ -2,7 +2,7 @@
 
 This project uses Selenium to automate testing of the WebstaurauntStore site. Scenarios tested include:
 - Searching for an item and validating all items returned include an expected word in the description.
-- User is able to add and remove item from the cart.
+- User is able to add and remove an item from the cart.
 
 It uses the WebDriverManager library to handle Selenium browser dependencies, and Chrome is the only browser tested against.
 
