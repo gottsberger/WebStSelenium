@@ -38,6 +38,7 @@ public class SearchTest {
         int numberOfPages = 0;
         boolean isLastPage = false;
         String itemToSearch = "stainless work table";
+        String descriptionToCheck = "Table";
 
         //Arrange
         SearchPage searchPage = new SearchPage(driver);
@@ -53,7 +54,7 @@ public class SearchTest {
             for (int i = 0; i < searchResults.size(); i++) {
                 assertThat(searchResults.get(i)).as("Description number: " + (i+1)  +
                         " on page: " + numberOfPages
-                        + " doesn't match").contains("Table");
+                        + " doesn't match").contains(descriptionToCheck);
             }
             if(searchPage.clickNextSearchPage()){
                 //continue
